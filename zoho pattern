@@ -1,0 +1,22 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int n =5;
+	    for(int i=1;i<=n;i++)
+	    {
+	        for(int j=1;j<=n;j++)
+	        {
+	           System.out.print(max(i-1,n-i,j-1,n-j)); 
+	        }
+	        System.out.println();
+	    }
+		
+	}
+	static int max(int top,int bot,int left,int right)
+	{
+	    int max1=top>bot?top:bot;
+	    int max2=left>right?left:right;
+	    return min1>min2?min1:min2;
+	}
+}
